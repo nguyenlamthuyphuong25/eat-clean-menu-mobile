@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "18162468684",
+    "project_id": "ecmlogin-6d690",
+    "storage_bucket": "ecmlogin-6d690.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18162468684:android:e83dd7a7b58942974871e9",
+        "android_client_info": {
+          "package_name": "com.phuongnlt.ECM"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18162468684-f4mmn928v3rt1pa1togb30l5jo16f8dt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phuongnlt.ECM",
+            "certificate_hash": "515def8c67f9fce453cebd5ff9921468e02cc335"
+          }
+        },
+        {
+          "client_id": "18162468684-maukp10dbf0r35qjkvjr4ce7reub1dqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phuongnlt.ECM",
+            "certificate_hash": "18bd71baef2fbe040cce53be97c9d77c6dc61a8b"
+          }
+        },
+        {
+          "client_id": "18162468684-iv5lokja8tepohh9q0rskinejb5cpua2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ5dH9vLbuaZQ7QG_k8VGEG54SsOSk8eM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18162468684-iv5lokja8tepohh9q0rskinejb5cpua2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
