@@ -60,6 +60,7 @@ const DailyMenu = () => {
 
       if (value !== null) {
         setUser(value);
+        getUser();
       }
     } catch (e) {
       alert("Failed to fetch the input from storage");
@@ -80,11 +81,11 @@ const DailyMenu = () => {
   
   useEffect(() => {
     readUser();
-  }, [user]);
+  }, []);
 
-  useEffect(() => {
-    getUser();
-  }, [user, dataUser]);
+  // useEffect(() => {
+  //   getUser();
+  // }, [user, dataUser]);
 
   const getMenu = async () => {
     await axios
@@ -107,7 +108,7 @@ const DailyMenu = () => {
 
   useEffect(() => {
     getMenu();
-  }, [dataUser, data, selectedDate]);
+  }, [selectedDate]);
 
   // , data, selectedDate
 

@@ -24,7 +24,7 @@
     "android": {
       "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/ECM_icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.phuongnlt.ECM"

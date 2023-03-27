@@ -41,7 +41,17 @@ const LoginInformation = () => {
   const [data, setData] = useState();
   const [name, setName] = useState("");
 
-  console.log(typeof(data));
+  console.log(typeof data);
+
+  const signOut = async () => {
+    try {
+      await GoogleSignin.revokeAccess();
+      await auth().signOut();
+      navigation.navigate("Login");
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   GoogleSignin.configure({
     webClientId:
@@ -98,7 +108,7 @@ const LoginInformation = () => {
               <Image style={img.imgInforEditIcon} source={IconEdit} />
             </TouchableOpacity>
             <View style={styles.innerFirstInforImg}>
-              <Image style={[img.imgInfor]} source={{uri: data.avatar}} />
+              <Image style={[img.imgInfor]} source={{ uri: data.avatar }} />
             </View>
             <Text style={[typo.subText, spacing.space_ver_2]}>
               Cập nhật ảnh đại điện
@@ -110,7 +120,10 @@ const LoginInformation = () => {
             </Text>
             <View style={textInput.inforTextInput}>
               <Image style={img.imgInforIcon} source={Icon} />
-              <TextInput onChangeText={(e) => setName(e.target.value)} value={data.fullname} />
+              <TextInput
+                onChangeText={(e) => setName(e.target.value)}
+                value={data.fullname}
+              />
             </View>
           </View>
           <View style={styles.bottomInfor}>

@@ -61,13 +61,14 @@ const Login = () => {
     user_sign_in
       .then((user) => {
         console.log(user);
+        postUser();
       })
       .catch((error) => {
         console.log(error);
       });
   };
 
-  // if (initializing) return null;
+  if (initializing) return null;
 
   const saveData = async () => {
     try {
@@ -121,8 +122,8 @@ const Login = () => {
         </View>
       </View>
     );
-  } else {
-    postUser();
+  // } else {
+  //   postUser();
   }
 };
 
